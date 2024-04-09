@@ -5,18 +5,18 @@ import re, ast
 with open('requirements.txt') as f:
 	install_requires = f.read().strip().split('\n')
 
-# get version from __version__ variable in metalcraft/__init__.py
+# get version from __version__ variable in frappe-qrcode/__init__.py
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
-with open('metalcraft/__init__.py', 'rb') as f:
+with open('frappe-qrcode/__init__.py', 'rb') as f:
     version = str(ast.literal_eval(_version_re.search(f.read().decode('utf-8')).group(1)))
 
 setup(
-	name='metalcraft',
+	name='frappe-qrcode',
 	version=version,
-	description='app for customizations',
-	author='Metalcraft',
-	author_email='cpurbaugh@sea-fire.com',
+	description='Adds QRcode generation to Jinja',
+	author='David Menting',
+	author_email='david@dato.mu',
 	packages=find_packages(),
 	zip_safe=False,
 	include_package_data=True,
