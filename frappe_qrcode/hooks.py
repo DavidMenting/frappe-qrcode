@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 from . import __version__ as app_version
 
-app_name = "frappe-qrcode"
+app_name = "frappe_qrcode"
 app_title = "Frappe QRcode"
 app_publisher = ""
 app_description = ""
@@ -16,6 +16,6 @@ app_license = "MIT"
 # Methods accessible to print template
 jenv = {
     "methods": [
-    'get_qrcode:frappe-qrcode.jinja_filters.get_qrcode'
+    'get_qrcode:frappe_qrcode.jinja_filters.get_qrcode'
     ]
 }

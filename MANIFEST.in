@@ -4,5 +4,5 @@ include *.json
 include *.md
 include *.py
 include *.txt
-recursive-include frappe-qrcode *.py
-recursive-include frappe-qrcode *.txt
+recursive-include frappe_qrcode *.py
+recursive-include frappe_qrcode *.txt
